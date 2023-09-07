@@ -21,4 +21,14 @@ public class PostController {
     public Post getPostById(@PathVariable Integer Id){
         return postService.getPostById(Id);
     }
+
+    @DeleteMapping("Post/{Id}")
+    public String deletePost(@PathVariable Integer Id){
+        return postService.deletePost(Id);
+    }
+
+    @PutMapping("Post/{Id}")
+    public String updatePost(@RequestBody Post post, @PathVariable Integer Id){
+        return postService.updatePost(post,Id);
+    }
 }
