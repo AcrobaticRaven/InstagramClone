@@ -1,4 +1,4 @@
-## Instagram BackEnd Application
+## Instagram Clone
 
 ## FrameWorks and Languages Used :
 
